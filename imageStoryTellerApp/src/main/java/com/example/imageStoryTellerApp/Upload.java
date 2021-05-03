@@ -268,9 +268,9 @@ public class Upload extends HttpServlet {
 		  //List<String> ll= new ArrayList<String>();
 	    
 	    int j;
-		for (int i=1;i<labelList.size();i++) {
+		for (int i=0;i<labelList.size();i++) {
 			
-			j=i;
+			j=i+1;
 			
 			//generate random values from 0-24
 			Random rand = new Random(); //instance of random class
@@ -303,9 +303,10 @@ public class Upload extends HttpServlet {
 					
 				
 			}
+			
+			line = line + " "+ labelList.get(i).getLabel() +" ";
 			if(j%5==0)
 				line= line + ".";
-			line = line + " "+ labelList.get(i).getLabel() +" ";
 			random = dummy;
 		}
 		return line;

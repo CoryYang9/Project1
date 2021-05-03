@@ -8,8 +8,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-196175239-1%22%3E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-196175239-1');
+</script>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Image Story Teller</title>
 <style type="text/css">
 	.div-1 {
 	        background-color: #E7CACA;
